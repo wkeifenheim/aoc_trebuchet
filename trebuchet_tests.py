@@ -1,5 +1,5 @@
 import pytest
-from trebuchet import calibration_sum, convert_text_to_number
+from trebuchet import calibration_sum
 from cal_input import cal_input
 
 
@@ -23,3 +23,7 @@ def test_parttwo_example():
         "7pqrstsixteen",
     ]
     assert calibration_sum(test_set, True) == 281
+
+
+def test_parttwo():
+    assert calibration_sum(cal_input, True) == 54265
